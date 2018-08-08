@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Mining on Sales Records of a Canada Retail Chain - Yiru Yang</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Yiru Yang" property="og:site_name">
+  
+    <meta content="Data Mining on Sales Records of a Canada Retail Chain" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/Data-Mining-on-Sales-Records-of-a-Canada-Retail-Chain/" property="og:url">
+  
+  
+    <meta content="2016-12-24T05:32:20-05:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/i-rest.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="data mining" property="article:tag">
+    
+    <meta content="retail chain" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Data Mining on Sales Records of a Canada Retail Chain">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/Data-Mining-on-Sales-Records-of-a-Canada-Retail-Chain/">
+  
+  
+    <meta name="twitter:description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/i-rest.jpg">
+  
+
+	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/mirana.jpg" alt="Yiru Yang"></a>
+      </div>
+      <div class="author-name">Yiru Yang</div>
+      <p>I am a data management scientist. Always hungry to keep learning.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/miranaruru" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:example.david@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2018 &copy; Yiru Yang</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/i-rest.jpg alt="Data Mining on Sales Records of a Canada Retail Chain">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Data Mining on Sales Records of a Canada Retail Chain</h1>
+        <div class="page-date"><span>2016, Dec 24&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <h2 id="objective-the-purchase-choice-of-products-of-different-customers">Objective: The purchase choice of products of different customers</h2>
+<p>Different customers will show different preferences to products. To figure out that what kinds of customers will purchase what categories of products, this objective is going to use decision tree, including interactive decision tree and autonomous decision tree, and logistic regression to find the potential relationships, and moreover, which can help the company to set market strategies to different customers.</p>
+
+<p>To build the decision tree and regression relationships, we need to define the target and Inputs first. The target variable is Product_Category, which is a nominal variable and has three categories, Furniture, Office Supplies and Technology. The inputs are used to define the characteristic of “Customer”, which include Membership, Customer_Class and Sale_Quantity. The details are shown in the followed table.</p>
+
+<p><img src="/assets/img/blog1-img1.png" alt="" /></p>
+
+<p>According to the methodology, the diagram flow is shown below. There are two parts, model preparation and model building.</p>
+
+<p><img src="/assets/img/blog1-img2.png" alt="" /></p>
+
+<p>In the procedures of model preparation, there are Merge, Replacement, Filter, Metadata and Data Partition nodes and though these steps, we can get the data to build the models.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<h3 id="1-interactive-decision-tree">1. Interactive Decision Tree</h3>
+
+<p><img src="/assets/img/blog1-img3.png" alt="" /></p>
+
+<p><em>Objective Interactive Decision Tree</em></p>
+
+<p>The target of the tree is the categories of products as mentioned, and the node splitting is based on the largest log worth. Through nodes splitting one by one, we can get the tree above. At the same time, we can get the corresponding fit statistics such as misclassification rate and average squared error.</p>
+
+<p><img src="/assets/img/blog1-img4.png" alt="" /></p>
+
+<p><em>Objective Interactive Decision Tree Misclassification rate</em></p>
+
+<p><img src="/assets/img/blog1-img5.png" alt="" /></p>
+
+<p><em>Objective Interactive Decision Tree Fit Statistics</em></p>
+
+<h3 id="2-autonomous-decision-tree">2. Autonomous Decision Tree</h3>
+
+<p><img src="/assets/img/blog1-img6.png" alt="" /></p>
+
+<p><em>Objective Autonomous Decision Tree</em></p>
+
+<p>Using the automatic decision tree building function, we can get the tree above which is built by SAS Enterprise Data Miner actively. I can get fit statistics as well.</p>
+
+<p><img src="/assets/img/blog1-img7.png" alt="" /></p>
+
+<p><em>Objective Autonomous Decision Tree Misclassification rate</em></p>
+
+<p><img src="/assets/img/blog1-img6.1.png" alt="" /></p>
+
+<p><em>Objective Autonomous Decision Tree Fit Statistics</em></p>
+
+<h3 id="3-logistic-regression">3. Logistic regression</h3>
+
+<p><img src="/assets/img/blog1-img8.png" alt="" />
+<img src="/assets/img/blog1-img9.png" alt="" /></p>
+
+<p><em>Objective Logistic Regression Model Building</em></p>
+
+<p><img src="/assets/img/blog1-img10.png" alt="" /></p>
+
+<p><em>Objective Logistic Regression Result Analysis</em></p>
+
+<p>From the result we can see, Customer_Class and Membership are not significant. Therefore, stepwise selection is considered to use.</p>
+
+<p><img src="/assets/img/blog1-img11.png" alt="" /></p>
+
+<p><em>Objective Logistic Regression Stepwise Selection</em></p>
+
+<p><img src="/assets/img/blog1-img12.png" alt="" /></p>
+
+<p><em>Objective Logistic Regression Fit Statistics</em></p>
+
+<h3 id="model-comparison">Model comparison</h3>
+
+<p><img src="/assets/img/blog1-img13.png" alt="" /></p>
+
+<p><em>Objective_ Model Comparison</em></p>
+
+<p>We use misclassification rate and average squared error to do the model comparison, and we find that Interactive decision tree is the best model with smallest indexes.
+Conclusion from Interactive Decision Tree</p>
+
+<p><img src="/assets/img/blog1-img14.png" alt="" /></p>
+
+<p><em>Objective_ Conclusion 1, 2</em></p>
+
+<p>From a part of the tree, we can draw two conclusions. The first one is that corporate class customers, no matter the membership level or sales quantity, prefer to buy office suppliers;
+And the second one is that customers, who are small business class, premium membership level, and buying quantity is always large than 25 per transaction, prefer to buy furniture.</p>
+
+<p><img src="/assets/img/blog1-img15.png" alt="" /></p>
+
+<p><em>Objective_ Conclusion 3</em>
+And the third conclusion from another part of the tree is that individual consumers’ purchase preference is hugely influenced by purchase quantity. If purchase quantity is smaller than 5, they are more likely to buy technology products; 5-10, they are more likely to purchase furniture; otherwise, office suppliers will be first choice.</p>
+
+<h3 id="potential-problem">Potential Problem</h3>
+
+<p>Although we find the best model among the three models, the misclassification rate is almost 50%, which means it is very easy to misclassify and in practice, the value of the conclusions maybe quite low. The possible reason of the high misclassification rate is because that the inputs or called variables are not significant, which can be seen in the regression results. Therefore, to get better conclusion, changing the variables to re-define the customers’ features is a reasonable way to solve the problem.</p>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Data Mining on Sales Records of a Canada Retail Chain&url=http://localhost:4000/Data-Mining-on-Sales-Records-of-a-Canada-Retail-Chain/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/Data-Mining-on-Sales-Records-of-a-Canada-Retail-Chain/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/Data-Mining-on-Sales-Records-of-a-Canada-Retail-Chain/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#data mining" class="tag">&#35; data mining</a>
+          
+            <a href="/tags#retail chain" class="tag">&#35; retail chain</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mirana.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
